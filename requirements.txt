@@ -1,0 +1,6 @@
+# Install the GTSAM Python bindings separately. See ENVIRONMENT.md.
+matplotlib>=3.10,<3.11
+numpy>=2.2,<2.3
+pandas>=2.3,<2.4
+scipy>=1.15,<1.16
+tqdm>=4.67,<5

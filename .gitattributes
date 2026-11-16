@@ -1,0 +1,7 @@
+# The formal checkpoint includes hashes of the raw Python source bytes.
+GTSAM_v2/**/*.py text eol=lf
+# Preserve the original mixed line endings of these two frozen sources.
+GTSAM_v2/estimator/odometry_preintegration.py -text !eol whitespace=cr-at-eol
+GTSAM_v2/experiments/master_follower_paper/formal_dncp_ranking.py -text !eol whitespace=cr-at-eol
+# Matplotlib includes trailing spaces inside generated SVG path attributes.
+GTSAM_v2/experiments/master_follower_paper/published_results/*.svg whitespace=-blank-at-eol

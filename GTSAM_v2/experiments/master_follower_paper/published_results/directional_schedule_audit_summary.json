@@ -1,0 +1,20 @@
+{
+  "case_count": 1000,
+  "estimator_run_count": 5000,
+  "physical_wave_counts": [
+    200
+  ],
+  "unique_physical_wave_counts": [
+    200
+  ],
+  "joint_cycle_counts": [
+    0,
+    62
+  ],
+  "ordinary_action_counts": [
+    0,
+    100
+  ],
+  "max_structural_violation_count": 0,
+  "historical_failure_record_count": 0
+}
