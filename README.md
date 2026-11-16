@@ -26,8 +26,10 @@ Run and analyze the 1,000 paired trials from the same directory.
 
 ```powershell
 python -u -m experiments.master_follower_paper.formal_experiment_6_directional_joint_schedules --mode formal --start-seed 1 --seed-count 1000 --workers 12
-python -u -m experiments.master_follower_paper.process_directional_joint_schedule_validation --output experiments/master_follower_paper/results/formal_directional_joint_schedules_phi15_beta10_anchor5_seed_1_1000 --start-seed 1 --seed-count 1000 --bootstrap-samples 10000
+python -u experiments/master_follower_paper/process_directional_joint_schedule_validation.py --output experiments/master_follower_paper/results/formal_directional_joint_schedules_phi15_beta10_anchor5_seed_1_1000 --start-seed 1 --seed-count 1000 --bootstrap-samples 10000
 ```
+
+Run the analysis directly as a script, as shown above. You can use a separate environment with NumPy, pandas and Matplotlib for analysis and plots.
 
 The runner checkpoints each completed seed. Restart with the same output directory and configuration to resume. The analysis produces method- and follower-level metrics, paired confidence intervals, and figures.
 
